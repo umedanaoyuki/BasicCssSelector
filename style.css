@@ -1,5 +1,13 @@
 @charset "utf-8";
 
-li:nth-child(3){
+li:nth-child(3n){
     color: red;
+}
+
+li:first-child{
+    background: pink;
+}
+
+li:last-child{
+    background: skyblue;
 }
