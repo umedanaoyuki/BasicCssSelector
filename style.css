@@ -1,5 +1,9 @@
 @charset "utf-8";
 
-div:not(.box) {
-    border: 1px solid red;
+p::before {
+    content: '- ';
+}
+
+p::after{
+    content: ' -';
 }
