@@ -1,5 +1,5 @@
 @charset "utf-8";
 
-li + li  {
-    border-top: 1px solid red;
+li:nth-child(3){
+    color: red;
 }
