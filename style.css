@@ -1,13 +1,5 @@
 @charset "utf-8";
 
-button:hover {
-    font-weight: bold;
-}
-
-input:focus {
-    border: 8px solid blue;
-}
-
-button:active {
-    border: 8px solid red;
+div:not(.box) {
+    border: 1px solid red;
 }
