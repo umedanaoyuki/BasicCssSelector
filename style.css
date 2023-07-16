@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-section > p {
-    color: rebeccapurple;
-}
-
-section p {
-    background: skyblue;
+li + li  {
+    border-top: 1px solid red;
 }
