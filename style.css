@@ -1,5 +1,18 @@
 @charset "utf-8";
 
 div.box {
-    color: rebeccapurple;
+    color: red;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+p {
+    background: pink;
 }
