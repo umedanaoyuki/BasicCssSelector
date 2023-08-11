@@ -1,19 +1,9 @@
 @charset "utf-8";
 
-#box-1 {
-    width: 160px;
-    height: 160px;
-    background-color: aquamarine;
+[target] {
+    font-weight: bold;
 }
 
-#box-2 {
-    width: 160px;
-    height: 160px;
-    background-color: yellow;
-}
-
-#box-3 {
-    width: 160px;
-    height: 160px;
-    background-color: blue;
+[type="password"] {
+    border: 8px solid blue;
 }
