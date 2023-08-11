@@ -1,9 +1,15 @@
 @charset "utf-8";
 
-p::before {
-    content: '- ';
+h1 {
+    background-color: pink;
 }
 
-p::after{
-    content: ' -';
+p {
+    background-color: skyblue;
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
 }
