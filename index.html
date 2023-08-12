@@ -26,10 +26,19 @@
                 }).then((num) => console.log(num));
             };
 
+
+            const madebyselfFunc = async(number) => {
+                return new Promise((resolve) => {
+                    resolve(`${number}番目の処理 madebySelf`);
+                }).then((number) => console.log(number));
+            }
+
             const ayscTestFunc = async() => {
                 console.log("1番目の処理");
                 await ayncFuncWaitingTest(2);
                 console.log("3番目の処理");
+                await madebyselfFunc(4);
+                console.log("5番目の処理");
             }
 
             //aync awaitを実装することで同期処理のように順番に出力される
