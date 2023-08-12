@@ -13,5 +13,37 @@
     <a href="">リンク</a>
     <input type="text">
     <input type="password">
+    <script>
+        'use strict'
+        {
+            console.log('consolo.log:test');
+
+            // const ayncFuncWaitingTest = async(num) => {
+            //     return new Promise((resolve) => {
+            //         setTimeout(() => {
+            //             resolve(`${num}番目のayncFuncWaitingTest`);
+            //         }, 1000*num);
+            //     }).then((num) => console.log(num));
+            // };
+
+            // const ayscTestFunc = async() => {
+
+            // }
+
+            const sampleFunc02 = async() => {
+                return 'これは非同期関数です'
+            }
+
+            console.log(sampleFunc02());
+
+            //eでreturnの中身を受け取る
+            console.log(sampleFunc02().then((e) => {
+                console.log(e);
+            }))
+
+
+
+        }
+    </script>
 </body>
 </html>
