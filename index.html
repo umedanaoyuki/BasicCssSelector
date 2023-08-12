@@ -18,29 +18,22 @@
         {
             console.log('consolo.log:test');
 
-            // const ayncFuncWaitingTest = async(num) => {
-            //     return new Promise((resolve) => {
-            //         setTimeout(() => {
-            //             resolve(`${num}番目のayncFuncWaitingTest`);
-            //         }, 1000*num);
-            //     }).then((num) => console.log(num));
-            // };
+            const ayncFuncWaitingTest = async(num) => {
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        resolve(`${num}番目のayncFuncWaitingTest`);
+                    }, 1000*num);
+                }).then((num) => console.log(num));
+            };
 
-            // const ayscTestFunc = async() => {
-
-            // }
-
-            const sampleFunc02 = async() => {
-                return 'これは非同期関数です'
+            const ayscTestFunc = async() => {
+                console.log("1番目の処理");
+                await ayncFuncWaitingTest(2);
+                console.log("3番目の処理");
             }
 
-            console.log(sampleFunc02());
-
-            //eでreturnの中身を受け取る
-            console.log(sampleFunc02().then((e) => {
-                console.log(e);
-            }))
-
+            //aync awaitを実装することで同期処理のように順番に出力される
+            ayscTestFunc();
 
 
         }
